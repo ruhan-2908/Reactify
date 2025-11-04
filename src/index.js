@@ -8,11 +8,14 @@ import reportWebVitals from './reportWebVitals';
 
 
 import Garage  from './components/Garage';
+import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Garage/>
+    {/* <App/> */}
+    {/* <Garage/> */}
+    <Header/>
   </React.StrictMode>
 );
 

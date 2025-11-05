@@ -1,20 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import FavoriteColor  from './components/FavoriteColor';
-import Car from './components/Car'
-import Scooter from "./components/Scooter"
-import List from "./components/List"
+import MyForm from './components/MyFrom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-
-    <FavoriteColor/>
-    <Car/>
-    <Scooter/>
-   <List/>
+    <MyForm/>
   </>
 );
 

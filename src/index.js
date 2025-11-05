@@ -5,12 +5,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import FavoriteColor  from './components/FavoriteColor';
 import Car from './components/Car'
-
+import Scooter from "./components/Scooter"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <FavoriteColor/>
     <Car/>
+    <Scooter/>
   </React.StrictMode>
 );
 

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import FavoriteColor  from './components/FavoriteColor';
 import Car from './components/Car'
 import Scooter from "./components/Scooter"
+import List from "./components/List"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -13,7 +14,7 @@ root.render(
     <FavoriteColor/>
     <Car/>
     <Scooter/>
-   
+   <List/>
   </>
 );
 

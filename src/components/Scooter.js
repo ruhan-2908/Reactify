@@ -15,9 +15,12 @@ function Scooter()
         year : 2020
     });
 
+
     function updateColor()
     {
-        setScooter({color:"Blue"});
+        setScooter((prev) =>{
+            return {...prev,color:"Blue"};
+        });
     }
 
 

@@ -8,11 +8,13 @@ import Car from './components/Car'
 import Scooter from "./components/Scooter"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
+
     <FavoriteColor/>
     <Car/>
     <Scooter/>
-  </React.StrictMode>
+   
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -13,10 +13,19 @@ function MyForm()
         console.log("Form submitted!");
         console.log(inputs);
     }
+
+    function handleChange(e)
+    {
+        const temp = e.target.name;
+        const value = e.target.value;
+        setInputs((prev) => {
+            return {...prev,[temp] : value }
+        })
+    }
     return <form onSubmit={handleSubmit}>
-            <label> Enter Your Name<input type="text" onChange={(e)=>{ setInputs((prev) => {return {...prev,name: e.target.value}})}} /></label><br/>
-            <label> Enter Your Age<input type="text" onChange={(e)=>{ setInputs((prev) => {return {...prev,age:e.target.value}})}} /></label><br/>
-            <label> Enter Your Email<input type="text" onChange={(e)=>{ setInputs((prev) => {return {...prev,email:e.target.value}})}} /></label><br/>
+            <label> Enter Your Name<input type="text" name="name" onChange={handleChange} /></label><br/>
+            <label> Enter Your Age<input type="text" name="age" onChange={handleChange} /></label><br/>
+            <label> Enter Your Email<input type="text" name="email" onChange={handleChange} /></label><br/>
             <input type="submit" value="Submit Form"/>
         </form>
 }

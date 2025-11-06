@@ -6,7 +6,7 @@ function MyForm()
 
     // const [age,setAge] = useState("");
     // const [email,setEmail] = useState("");
-    const [inputs,setInputs] = useState({phone:"+91",email:"@gmail.com"});
+    const [inputs,setInputs] = useState({phone:"+91",email:"@gmail.com",about:"I am a programmer?"});
     function handleSubmit(e)
     {
         e.preventDefault();
@@ -33,7 +33,9 @@ function MyForm()
                     <option value={"India"}>India</option>
                     <option value={"United States"}>United States</option>
                 </select></label><br/>
+            <label>Enter About You: <textarea name="about" value={inputs.about} onChange={handleChange}></textarea></label>
             <input type="submit" value="Submit Form"/>
         </form>
 }
+
 export default MyForm;
